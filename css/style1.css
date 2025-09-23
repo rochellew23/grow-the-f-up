@@ -1,0 +1,87 @@
+html{
+    font-size: 25px;
+}
+
+body{
+    background-color: azure;
+    font-family: "Comic Relief", system-ui;
+}
+
+button{
+    font-family: "Comic Relief", system-ui;
+    border: 4px solid black;
+    border-radius: 8px;
+}
+
+.center_image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.button-group{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+}
+
+.button{
+    font-size: larger;
+    padding: 15px;
+    margin: 30px;
+}
+
+.button a{
+    text-decoration-line: none;
+}
+
+.main-button{
+    background-color: #004aad;
+    color: #00bf63;
+}
+
+.main-button a{
+    color: #00bf63;
+}
+
+.credit-button{
+    background-color: #00bf63;
+    color:#004aad
+}
+
+.credit-button a{
+    color: #004aad;
+}
+
+.list{
+    background-image: url("/media/white-crumpled-paper-texture-background.jpg");
+    background-color: #ffffff;
+    padding: 20px;
+    font-family: "Delicious Handrawn", cursive;
+    background-repeat: repeat-y;
+    margin-left: auto;
+    margin-right: auto;
+    width: 33%;
+    line-height: 50px;
+    color: #000042;
+}
+
+.pop-ups{
+    background-color: white;
+    border: black solid 4px;
+    border-radius: 100px;
+    text-align: center;
+    padding: 5px;
+    width: 225px;
+}
+
+#intro-image{
+    margin-top: 5%;
+}
+
