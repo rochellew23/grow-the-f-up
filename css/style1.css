@@ -72,6 +72,20 @@ button{
     color: #000042;
 }
 
+#page8list{
+    background-image: url("/media/white-crumpled-paper-texture-background.jpg");
+    background-color: #ffffff;
+    font-family: "Delicious Handrawn", cursive;
+    padding: 5px;
+    font-size: small;
+    color: #000042;
+    width: 150px;
+    z-index: 1;
+    position: fixed;
+    left:800px;
+    top: 400px;
+}
+
 .pop-ups{
     background-color: white;
     border: black solid 4px;
