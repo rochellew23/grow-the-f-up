@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>don't get distracted...</title>
+        <title>rise and shine!</title>
         <link rel="stylesheet" type="text/css" href="/css/style1.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,24 +10,28 @@
         <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Delicious+Handrawn&family=Rubik+Pixels&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div id="good-morning!" class="center_image">
-            <h2 class="center-text">Good Morning!</h2>
-            <p class="center-text">Today is a new day! Lets look at our to do list and get some stuff done!</p>
-            <button id="page1-button" class="center_image">➞</button>
+        <div id="good-morning" class="center_image">
+            <h1 class="center-text" id="morning1"> </h1>
+            <p class="center-text" id="morning2"></p>
+            <button id="page1-button" class="center-button">➞</button>
         </div>
         
-        <div class="list center_image" id="page1-list">
-            <h3 class="center-text">to do list</h3>
+        <div class="list center_image" id="page1list">
+            <h3 class="center-text">to-do list</h3>
             <ul>
-                <li>hang out with friends</li>
-                <li>clean room</li>
-                <li>arts n' crafts</li>
-                <li>play video games</li>
-                <li>schoolwork</li>
-                <li><a href="/html/page2.html">doomscroll</a></li>
+                <li class="list-items" id="friends" onclick="page1Alerts('friends')">hang out with friends</li>
+                <li class="list-items" id="clean-room1" onclick="page1Alerts('clean-room1')">clean room</li>
+                <li class="list-items" id="arts" onclick="page1Alerts('arts')">arts n' crafts</li>
+                <li class="list-items" id="games" onclick="page1Alerts('games')">play video games</li>
+                <li class="list-items" id="school" onclick="page1Alerts('school')">schoolwork</li>
+                
             </ul>
+            <p id="doomscroll"><a href="/html/page2.html">doomscroll</a></p>
         </div>
 
+        
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
         <script src="/js/script.js"></script>
     </body>
