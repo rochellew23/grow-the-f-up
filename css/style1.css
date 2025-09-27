@@ -267,3 +267,62 @@ margin-top: 7%;
     color: red;
     text-decoration: none;
 }
+
+#the-end{
+    font-size: 100px;
+}
+
+/* #ending-text{
+
+} */
+
+.ending-image{
+    width:20%;
+    position: absolute;
+}
+
+#ending1{
+    top:-200px;
+    left:-250px;
+}
+
+#ending2{
+    top:-400px;
+    left: 1250px;
+}
+
+#ending3{
+    top:1000px;
+    left: -575px;
+}
+
+#ending4{
+    top:1000px;
+    left: -1050px;
+}
+
+#end-section{
+    position: relative;
+    top: 400px;
+}
+
+#ending-text{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#ending-button{
+    opacity: 0;
+}
+
+#creditsList{
+    list-style-type: none;
+}
+
+#hand{
+    font-family: "Delicious Handrawn", cursive;
+}
+
+#pixel{
+    font-family: "Rubik Pixels", system-ui;
+}

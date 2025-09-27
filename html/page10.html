@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>title</title>
-        <link rel="stylesheet" type="text/css" href="/css/style1.css">
-        <!--external fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Delicious+Handrawn&family=Rubik+Pixels&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <h1>The End!</h1>
-        <p>While I get started on cleaning my room, wanna head back to the beginning? Or perhaps you want to take a look at the credits?</p>
-        <div class="button-group" id="">
+
+<head>
+    <meta charset="utf-8">
+    <title>and there are some flowers you only see on detours</title>
+    <link rel="stylesheet" type="text/css" href="/css/style1.css">
+    <!--external fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Delicious+Handrawn&family=Rubik+Pixels&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="the-end" class="center-text">The End!</h1>
+    <img src="/media/clean_1.gif" alt="cleaning gif 1" class="ending-image" id="ending1">
+    <img src="/media/clean_2.gif" alt="cleaning gif 2" class="ending-image" id="ending2">
+    <img src="/media/clean_3.gif" alt="cleaning gif 3" class="ending-image" id="ending3">
+    <img src="/media/clean_4.gif" alt="cleaning gif 4" class="ending-image" id="ending4">
+
+    <div id="end-section">
+        <p id="ending-text" class="center-text"></p>
+        <div class="button-group" id="ending-button">
             <a href="/html/index.html"><button class="main-button button">back to start</button></a>
-            <button class="credit-button button"><a href="/html/credits.html">credits</a></button>
+            <a href="/html/credits.html"><button class="credit-button button">credits</button></a>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-        <script src="/js/script.js"></script>
-    </body>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
 </html>

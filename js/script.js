@@ -329,6 +329,50 @@ document.addEventListener("DOMContentLoaded", (event) => {
     delay: 1,
   })
 
+  //page 10 animations
+  let page10=gsap.timeline()
+  let theEnd=SplitText.create("#the-end", { type: "chars" });
+
+  page10.from(theEnd.chars, {
+    duration: 2, 
+    y: -500,       
+    stagger: 0.15,
+    ease: "bounce.out",
+  })
+  page10.to('#ending1', {
+    top:200,
+    left:350,
+    duration:1.75,
+    ease: "elastic.out(1,0.5)"
+  })
+  page10.to('#ending3', {
+    top:300,
+    left: 575,
+    duration:1.75,
+    ease: "elastic.out(1,0.5)"
+  })
+  page10.to('#ending2', {
+    top:200,
+    left: 850,
+    duration:1.75,
+    ease: "elastic.out(1,0.5)"
+  })
+  page10.to('#ending4', {
+    top:300,
+    left: 1050,
+    duration:1.75,
+    ease: "elastic.out(1,0.5)",
+  })
+  page10.to('#ending-text', {
+    duration: 7,
+    text: "While I get started on cleaning my room, wanna head back to the beginning? Or perhaps you want to take a look at the credits?",
+    ease: "none",
+  })
+  page10.to('#ending-button', {
+    opacity:1,
+    duration:1.5
+  })
+
 });
 //page 1 alerts
 function page1Alerts(keyword) {
