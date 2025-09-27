@@ -31,19 +31,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
       .to('#good-morning', { opacity: 0, duration: 1.5 });
   };
 
-  listButton1.addEventListener("click", listAppear1);
+  if (listButton1) {
+    listButton1.addEventListener("click", listAppear1);
+  }
 
-  let click = 0;
+  let clickPage1 = 0;
   let listItems = document.querySelectorAll('.list-items');
 
   function addClicks() {
-    click += 1;
-    console.log(click)
+    clickPage1 += 1;
+    console.log(clickPage1)
     doomScroll();
   }
 
   function doomScroll() {
-    if (click == 5) {
+    if (clickPage1 == 5) {
       console.log('5 clicks')
       gsap.fromTo('#doomscroll', { opacity: 0 }, { opacity: 1, duration: 1.33 });
     }
@@ -53,8 +55,50 @@ document.addEventListener("DOMContentLoaded", (event) => {
     item.addEventListener('click', addClicks)
   });
 
-});
+  //page 2 animations
 
+    let clickPage2 = 0;
+    let phone = document.getElementById('phone')
+
+    function countPage2(){
+      clickPage2 += 1;
+      console.log(clickPage2)
+      popUp(clickPage2)
+    }
+
+    phone.addEventListener('click', countPage2)
+
+    function popUp(num){
+      switch (num) {
+        case 1:
+          gsap.to('#pop-up1',{top:100, left:575, duration:1.5})
+          break;
+        
+        case 2:
+          gsap.to('#pop-up2',{top:175, left:975, duration:1.5})
+          break;
+
+        case 3:
+          gsap.to('#pop-up3',{top:550, left:650, duration:1.5})
+          break;
+        
+        case 4:
+          gsap.to('#pop-up4',{top:640, left:1000, duration:1.5})
+          break;
+
+        case 5:
+          gsap.to('#pop-up5',{top:350, left:755, opacity:1, duration:1.5})
+          break;
+      
+        default:
+          break;
+      }
+    }
+
+
+
+});
+  //page 1 alerts
   function page1Alerts(keyword) {
     switch (keyword) {
       case 'friends':

@@ -121,6 +121,14 @@ button:hover{
     left: 550px;
 }
 
+#phone{
+margin-top: 7%;
+}
+
+#phone:hover{
+    cursor: pointer;
+}
+
 .pop-ups{
     background-color: white;
     border: black solid 4px;
@@ -128,6 +136,40 @@ button:hover{
     text-align: center;
     padding: 5px;
     width: 225px;
+    font-family: "Rubik Pixels", system-ui;
+    z-index: 1;
+    position: absolute;
+}
+
+#pop-up1{
+    top:100px;
+    left:-575px;
+}
+
+#pop-up2{
+    top:175px;
+    left:1975px;
+}
+
+#pop-up3{
+    top: 550px;
+    left:-650px;
+}
+
+#pop-up4{
+    top: 640px;
+    left:2000px;
+}
+
+#pop-up5{
+    top:1350px;
+    left:755px;
+    font-size: larger;
+    opacity: 0;
+}
+
+#pop-up5 a{
+    color: red;
 }
 
 #intro-image{
