@@ -259,6 +259,20 @@ document.addEventListener("DOMContentLoaded", (event) => {
     window.addEventListener('click', sixAdd)
   }
 
+  //page 8 animations
+  gsap.to('#page8anime', {top:400, duration: 3})
+
+  //page 9 animations
+  let page9 = gsap.timeline()
+  page9.to('#page9list', {top:200, duration:1.5})
+  page9.to('#page9text', {
+    duration: 5,
+    text: "I don't have all the answers to my problems at this moment...But I know that I have to start somewhere, so let's start with this.",
+    ease: "none",
+    delay: 1,
+  })
+  
+
 });
 //page 1 alerts
 function page1Alerts(keyword) {

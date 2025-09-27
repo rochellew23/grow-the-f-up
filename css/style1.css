@@ -106,7 +106,7 @@ button:hover{
     z-index: 1;
 }
 
-#page8list{
+.page8list{
     background-image: url("/media/white-crumpled-paper-texture-background.jpg");
     background-color: #ffffff;
     font-family: "Delicious Handrawn", cursive;
@@ -117,14 +117,32 @@ button:hover{
     z-index: 1;
     position: absolute;
     left:800px;
+    top: -400px;
+}
+
+#page9-8{
     top: 400px;
 }
 
 #page9list{
     z-index: 2;
     position: absolute;
-    top:200px;
+    top:1200px;
     left: 550px;
+}
+
+#text9{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 150px;
+}
+
+#normal a{
+    color: #000042;
+}
+
+#normal a:visited{
+    color: #000042;
 }
 
 #phone{

@@ -11,7 +11,7 @@
     </head>
     <body>
         <img src="/media/desk.png" class="center_image" id="desk">
-        <div id="page8list">
+        <div class="page8list" id="page9-8">
             <h5 class="center-text">to-do list</h5>
             <ul>
                 <li>~~~~~~</li>
@@ -26,7 +26,7 @@
             <h3 class="center-text">to-do list</h3>
             <ul>
                 <li>hang out with friends</li>
-                <a href="/html/page10.html"><li>clean room</li></a>
+                <li id="normal"><a href="/html/page10.html" >clean room</a></li>
                 <li>arts n' crafts</li>
                 <li>play video games</li>
                 <li>schoolwork</li>
@@ -34,10 +34,12 @@
             </ul>
         </div>
 
-        <div>
-            <p>I don't have all the answers to my problems at this moment...But I know that I have to start somewhere, so let's start with this.</p>
+        <div id="text9">
+            <p class="center-text" id="page9text"></p>
         </div>
     
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
         <script src="/js/script.js"></script>
     </body>
