@@ -109,50 +109,50 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 
   //page 4 animations
-  let page4=gsap.timeline()
-  page4.to('#page4-1',{
+  let page4 = gsap.timeline()
+  page4.to('#page4-1', {
     duration: 2,
     text: "Today was meant to be a productive day :( What happened?",
     ease: "none",
   })
-  page4.to('#page4-2',{
+  page4.to('#page4-2', {
     duration: 3,
     text: "Wait a minute...what day even is today? What year is it?",
     ease: "none",
   })
-  page4.to('#page4-3',{
+  page4.to('#page4-3', {
     duration: 3.5,
     text: "How old am I?",
     ease: "none",
   })
-  page4.to('#age-select', {opacity:1, duration:1.5});
+  page4.to('#age-select', { opacity: 1, duration: 1.5 });
 
   let ageMenu = document.getElementById("confirm-age")
-  let age4=gsap.timeline()
+  let age4 = gsap.timeline()
 
   function ageText(age) {
     switch (age) {
       case '17':
-        age4.to('#age-1',{
+        age4.to('#age-1', {
           duration: 5,
           text: "No that can't be right... It's been so long since I was 17. Then why do I feel like this is the right answer?",
           ease: "none",
         })
-        age4.to('#age-2',{
+        age4.to('#age-2', {
           duration: 2,
           text: "I'm so confused...I need a drink...",
           ease: "none",
         })
-        age4.to('#to5', {opacity:1, duration:1.5})
+        age4.to('#to5', { opacity: 1, duration: 1.5 })
         break;
 
       case '18':
-        age4.to('#age-1',{
+        age4.to('#age-1', {
           duration: 2,
           text: "No that doesn't make any sense...",
           ease: "none",
         })
-        age4.to('#age-2',{
+        age4.to('#age-2', {
           duration: 2,
           text: "This isn't the right answer...",
           ease: "none",
@@ -160,12 +160,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
         break;
 
       case '19':
-        age4.to('#age-1',{
+        age4.to('#age-1', {
           duration: 2,
           text: "No that doesn't make any sense...",
           ease: "none",
         })
-        age4.to('#age-2',{
+        age4.to('#age-2', {
           duration: 2,
           text: "This isn't the right answer...",
           ease: "none",
@@ -173,28 +173,91 @@ document.addEventListener("DOMContentLoaded", (event) => {
         break;
 
       case '20':
-        age4.to('#age-1',{
+        age4.to('#age-1', {
           duration: 4,
           text: "This is my current age...but why do I feel like this isn't it?",
           ease: "none",
         })
-        age4.to('#age-2',{
+        age4.to('#age-2', {
           duration: 2,
           text: "It doesn't make sense...",
           ease: "none",
         })
+        break;
+
+      default:
+        break;
+    }
+  }
+
+  if (ageMenu) {
+    ageMenu.addEventListener('click', () => {
+      let age = document.getElementById("age-menu").value;
+      console.log(age)
+      ageText(age)
+    })
+  }
+
+  //page 5 animations
+  let page5 = gsap.timeline()
+  page5.to('#page5text', {
+    duration: 4,
+    text: "Looking into the fridge, there are 3 options for drinks. What should I drink?",
+    ease: "none",
+  })
+  page5.to('#drink-wrapper', { opacity: 1, duration: 1.33 })
+
+  //page 6 animations
+  let six = document.getElementById('page6')
+  let sixCount = 0
+  let anime6 = gsap.timeline()
+  anime6.to('#page6-1', {
+    duration: 4,
+    text: "As I sip on my soda, on the way back to my room, I start to feel strange. Like I'm in a strangers body. But this is my body...",
+    ease: "none",
+  })
+  function sixText(num) {
+    switch (num) {
+      case 1:
+        anime6.to('#page6-2', {
+          duration: 10,
+          text: "Seventeen...The pandemic started when I was that age. I turned eighteen that June. Graduated high school. Started college. All during lock down. All online. All within these four walls of my room. It was a lonely time but I got through it. Didn't I?",
+          ease: "none",
+        })
+        break;
+
+      case 2:
+        anime6.to('#page6-3', {
+          duration: 10,
+          text: "But it wasn't just lonely wasn't it? It was stagnate. Everyday I would wake up, go to my desk, and do nothing but scroll social media. Some days I wouldn't even make it out of bed. I thought that was over but isn't it what I just did today?",
+          ease: "none",
+        })
+        break;
+
+      case 3:
+        anime6.to('#page6-4', {
+          duration: 7,
+          text: "Sometimes it feels like I'm still seventeen. Still watching that shelter in place announcement. Still waiting for the day I finally grow up.",
+          ease: "none",
+        })
+        break;
+
+      case 4:
+        anime6.to('#page6-5', {opacity:1, duration:1.5})
         break;
     
       default:
         break;
     }
   }
-
-  ageMenu.addEventListener('click', ()=>{
-    let age = document.getElementById("age-menu").value;
-    console.log(age)
-    ageText(age)
-  })
+  function sixAdd() {
+    sixCount+=1
+    console.log(sixCount)
+    sixText(sixCount)
+  }
+  if (six) {
+    window.addEventListener('click', sixAdd)
+  }
 
 });
 //page 1 alerts
