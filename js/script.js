@@ -259,6 +259,63 @@ document.addEventListener("DOMContentLoaded", (event) => {
     window.addEventListener('click', sixAdd)
   }
 
+  //page 7 animations
+  let line1 = SplitText.create("#page7_1", { type: "chars" });
+  let line2 = SplitText.create("#page7_2", { type: "chars" });
+  let line3 = SplitText.create("#page7_3", { type: "chars" });
+  let line4 = SplitText.create("#page7_4", { type: "chars" });
+  let line5 = SplitText.create("#page7_5", { type: "chars" });
+  let line6 = SplitText.create("#page7_6", { type: "words" });
+
+  let page7 = gsap.timeline()
+
+  page7.from(line1.chars, {
+    duration: 3, 
+    y: 100,       
+    autoAlpha: 0,
+    stagger: 0.05 
+  });
+  page7.from(line2.chars, {
+    duration: 3,
+    x:100,
+    autoAlpha: 0,
+    stagger: 0.05,
+    delay: 1 
+  })
+  page7.from(line3.chars, {
+    duration: 2,
+    x:150,
+    y: 150,
+    autoAlpha: 0,
+    stagger: 0.05,
+    delay: 1 
+  })
+  page7.from(line4.chars, {
+    duration: 2,
+    rotation: 360,
+    x:200,
+    y: -200,
+    autoAlpha: 0,
+    stagger: 0.05,
+    delay: 1 
+  })
+  page7.from(line5.chars, {
+    duration: 1,
+    rotation: -90,
+    x:-245,
+    y: -135,
+    autoAlpha: 0,
+    stagger: 0.05,
+    delay: 1 
+  })
+  page7.from(line6.words, {
+    duration: 4,
+    fontSize:0,
+    autoAlpha: 0,
+    stagger: 0.1,
+  })
+  
+
   //page 8 animations
   gsap.to('#page8anime', {top:400, duration: 3})
 
@@ -271,7 +328,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     ease: "none",
     delay: 1,
   })
-  
 
 });
 //page 1 alerts

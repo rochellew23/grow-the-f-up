@@ -251,3 +251,19 @@ margin-top: 7%;
 #page6-5{
     opacity: 0;
 }
+
+#page7{
+    margin-top: 145px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#grow{
+    font-size: larger;
+}
+
+#grow a{
+    color: red;
+    text-decoration: none;
+}
