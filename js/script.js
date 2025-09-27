@@ -57,71 +57,102 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   //page 2 animations
 
-    let clickPage2 = 0;
-    let phone = document.getElementById('phone')
+  let clickPage2 = 0;
+  let phone = document.getElementById('phone')
 
-    function countPage2(){
-      clickPage2 += 1;
-      console.log(clickPage2)
-      popUp(clickPage2)
-    }
+  function countPage2() {
+    clickPage2 += 1;
+    console.log(clickPage2)
+    popUp(clickPage2)
+  }
 
+  if (phone) {
     phone.addEventListener('click', countPage2)
-
-    function popUp(num){
-      switch (num) {
-        case 1:
-          gsap.to('#pop-up1',{top:100, left:575, duration:1.5})
-          break;
-        
-        case 2:
-          gsap.to('#pop-up2',{top:175, left:975, duration:1.5})
-          break;
-
-        case 3:
-          gsap.to('#pop-up3',{top:550, left:650, duration:1.5})
-          break;
-        
-        case 4:
-          gsap.to('#pop-up4',{top:640, left:1000, duration:1.5})
-          break;
-
-        case 5:
-          gsap.to('#pop-up5',{top:350, left:755, opacity:1, duration:1.5})
-          break;
-      
-        default:
-          break;
-      }
-    }
+  }
 
 
 
-});
-  //page 1 alerts
-  function page1Alerts(keyword) {
-    switch (keyword) {
-      case 'friends':
-        alert("Trick task! I don't have friends! lol")
+  function popUp(num) {
+    switch (num) {
+      case 1:
+        gsap.to('#pop-up1', { top: 100, left: 575, duration: 1.5 })
         break;
 
-      case 'clean-room1':
-        alert("I should...but there's so much to do...")
+      case 2:
+        gsap.to('#pop-up2', { top: 175, left: 975, duration: 1.5 })
         break;
 
-      case 'arts':
-        alert("I could...but I have so many unfinished projects...I don't know where to start...")
+      case 3:
+        gsap.to('#pop-up3', { top: 550, left: 650, duration: 1.5 })
         break;
 
-      case 'games':
-        alert("For some weird reason it's been hard to pick up a video game...strange...")
+      case 4:
+        gsap.to('#pop-up4', { top: 640, left: 1000, duration: 1.5 })
         break;
 
-      case 'school':
-        alert("The assignments aren't due for a couple days...I'm sure I can start this later...")
+      case 5:
+        gsap.to('#pop-up5', { top: 350, left: 755, opacity: 1, duration: 1.5 })
         break;
 
       default:
         break;
     }
   }
+
+  //page 3 animation
+  let page3 = gsap.timeline()
+  page3.from('#room', { opacity: 0, duration: 1.5 })
+  page3.to("#page3text", {
+    duration: 3,
+    text: "uh oh! i scrolled for a little too long and now the day's almost done :( (and my butt hurts from sitting at my desk chair too long...) let's see if i can move to another place for now!",
+    ease: "steps(100)",
+  });
+
+});
+//page 1 alerts
+function page1Alerts(keyword) {
+  switch (keyword) {
+    case 'friends':
+      alert("Trick task! I don't have friends! lol")
+      break;
+
+    case 'clean-room1':
+      alert("I should...but there's so much to do...")
+      break;
+
+    case 'arts':
+      alert("I could...but I have so many unfinished projects...I don't know where to start...")
+      break;
+
+    case 'games':
+      alert("For some weird reason it's been hard to pick up a video game...strange...")
+      break;
+
+    case 'school':
+      alert("The assignments aren't due for a couple days...I'm sure I can start this later...")
+      break;
+
+    default:
+      break;
+  }
+}
+
+//page 3 alerts
+function page3Alerts(keyword) {
+  switch (keyword) {
+    case 'bean':
+      alert("we haven't gotten the refill for this chair so it's really uncomfortable to sit in...not this spot")
+      break;
+
+    case 'top':
+      alert("this is my bed. i don't really feel like climbing up right now...not this spot")
+      break;
+
+    case 'bottom':
+      alert("this is my sister's bed. i would sit there but she always has stuff on it...not this spot")
+      break;
+
+    default:
+      break;
+  }
+}
