@@ -54,6 +54,12 @@ button:hover{
     margin: 30px;
 }
 
+.small-button{
+    font-size: large;
+    padding: 5px;
+    border-width: 3px;
+}
+
 .button a{
     text-decoration-line: none;
 }
@@ -181,5 +187,22 @@ margin-top: 7%;
 }
 #doomscroll a{
     color: #000042;
+    text-decoration: none;
+}
+
+#page4text{
+    margin-top: 5%;
+}
+
+#age-select{
+    opacity: 0;
+}
+
+#to5{
+    width: 15%;
+    opacity: 0;
+}
+
+#to5link a{
     text-decoration: none;
 }

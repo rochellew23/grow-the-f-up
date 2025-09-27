@@ -14,23 +14,31 @@
 </head>
 
 <body>
-    <p>Today was meant to be a productive day :( What happened?</p>
-    <p>Wait a minute...what day even is today? What year is it?</p>
-    <p>How old am I?</p>
-    <label for="age">My age is:</label>
-    <select name="age" id="age-menu">
-        <option value="21">21 years old</option>
-        <option value="20">20 years old</option>
-        <option value="19">19 years old</option>
-        <option value="18">18 years old</option>
-        <option value="17">17 years old</option>
-    </select>
-    <button id="confirm-age">confirm</button>
-    <div id="17-age">
-        <p>No that can't be right... It's been so long since I was 17. Then why do I feel like this is the right age?</p>
-        <p>I'm so confused...I need a drink...</p>
-        <a href="/html/page5.html"></a><button>head to the kitchen</button>
+    <div id="page4text">
+        <p id="page4-1" class="center-text"></p>
+        <p id="page4-2" class="center-text"></p>
+        <p id="page4-3" class="center-text"></p>
     </div>
+    
+    <div id="age-select">
+        <label for="age">My age is:</label>
+        <select name="age" id="age-menu">
+            <option value="20">20 years old</option>
+            <option value="19">19 years old</option>
+            <option value="18">18 years old</option>
+            <option value="17">17 years old</option>
+        </select>
+        <button class="small-button" id="confirm-age">confirm</button>
+    </div>
+    
+    <div id="age-text">
+        <p id="age-1" class="center-text"></p>
+        <p id="age-2" class="center-text"></p>
+        <a href="/html/page5.html" id="to5link"><button class="small-button center_image" id="to5">head to the kitchen</button></a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="/js/script.js"></script>
 </body>

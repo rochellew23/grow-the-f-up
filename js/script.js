@@ -104,9 +104,97 @@ document.addEventListener("DOMContentLoaded", (event) => {
   page3.from('#room', { opacity: 0, duration: 1.5 })
   page3.to("#page3text", {
     duration: 3,
-    text: "uh oh! i scrolled for a little too long and now the day's almost done :( (and my butt hurts from sitting at my desk chair too long...) let's see if i can move to another place for now!",
+    text: "oh no...i scrolled for a little too long and now the day's almost done :( (and my butt hurts from sitting at my desk chair too long...) let's see if i can move to another place for now!",
     ease: "steps(100)",
   });
+
+  //page 4 animations
+  let page4=gsap.timeline()
+  page4.to('#page4-1',{
+    duration: 2,
+    text: "Today was meant to be a productive day :( What happened?",
+    ease: "none",
+  })
+  page4.to('#page4-2',{
+    duration: 3,
+    text: "Wait a minute...what day even is today? What year is it?",
+    ease: "none",
+  })
+  page4.to('#page4-3',{
+    duration: 3.5,
+    text: "How old am I?",
+    ease: "none",
+  })
+  page4.to('#age-select', {opacity:1, duration:1.5});
+
+  let ageMenu = document.getElementById("confirm-age")
+  let age4=gsap.timeline()
+
+  function ageText(age) {
+    switch (age) {
+      case '17':
+        age4.to('#age-1',{
+          duration: 5,
+          text: "No that can't be right... It's been so long since I was 17. Then why do I feel like this is the right answer?",
+          ease: "none",
+        })
+        age4.to('#age-2',{
+          duration: 2,
+          text: "I'm so confused...I need a drink...",
+          ease: "none",
+        })
+        age4.to('#to5', {opacity:1, duration:1.5})
+        break;
+
+      case '18':
+        age4.to('#age-1',{
+          duration: 2,
+          text: "No that doesn't make any sense...",
+          ease: "none",
+        })
+        age4.to('#age-2',{
+          duration: 2,
+          text: "This isn't the right answer...",
+          ease: "none",
+        })
+        break;
+
+      case '19':
+        age4.to('#age-1',{
+          duration: 2,
+          text: "No that doesn't make any sense...",
+          ease: "none",
+        })
+        age4.to('#age-2',{
+          duration: 2,
+          text: "This isn't the right answer...",
+          ease: "none",
+        })
+        break;
+
+      case '20':
+        age4.to('#age-1',{
+          duration: 4,
+          text: "This is my current age...but why do I feel like this isn't it?",
+          ease: "none",
+        })
+        age4.to('#age-2',{
+          duration: 2,
+          text: "It doesn't make sense...",
+          ease: "none",
+        })
+        break;
+    
+      default:
+        break;
+    }
+  }
+
+  ageMenu.addEventListener('click', ()=>{
+    let age = document.getElementById("age-menu").value;
+    console.log(age)
+    ageText(age)
+  })
 
 });
 //page 1 alerts
@@ -129,7 +217,7 @@ function page1Alerts(keyword) {
       break;
 
     case 'school':
-      alert("The assignments aren't due for a couple days...I'm sure I can start this later...")
+      alert("I should...but I don't understand the work at all...and I'm scared to ask for help...")
       break;
 
     default:
