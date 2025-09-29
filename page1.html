@@ -2,42 +2,34 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title> but baby steps are still steps</title>
+        <title>rise and shine!</title>
         <link rel="stylesheet" type="text/css" href="/css/style1.css">
-        <!--external fonts-->
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Delicious+Handrawn&family=Rubik+Pixels&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <img src="/media/desk.png" class="center_image" id="desk">
-        <div class="page8list" id="page9-8">
-            <h5 class="center-text">to-do list</h5>
-            <ul>
-                <li>~~~~~~</li>
-                <li>~~~~~~</li>
-                <li>~~~~~~</li>
-                <li>~~~~~~</li>
-                <li>~~~~~~</li>
-            </ul>
+        <div id="good-morning" class="center_image">
+            <h1 class="center-text" id="morning1"> </h1>
+            <p class="center-text" id="morning2"></p>
+            <button id="page1-button" class="center-button">➞</button>
         </div>
-
-        <div class="list center_image" id="page9list">
+        
+        <div class="list center_image" id="page1list">
             <h3 class="center-text">to-do list</h3>
             <ul>
-                <li>hang out with friends</li>
-                <li id="normal"><a href="/html/page10.html" >clean room</a></li>
-                <li>arts n' crafts</li>
-                <li>play video games</li>
-                <li>schoolwork</li>
-                <li id="cross-out">doomscroll</li>
+                <li class="list-items" id="friends" onclick="page1Alerts('friends')">hang out with friends</li>
+                <li class="list-items" id="clean-room1" onclick="page1Alerts('clean-room1')">clean room</li>
+                <li class="list-items" id="arts" onclick="page1Alerts('arts')">arts n' crafts</li>
+                <li class="list-items" id="games" onclick="page1Alerts('games')">play video games</li>
+                <li class="list-items" id="school" onclick="page1Alerts('school')">schoolwork</li>
+                
             </ul>
+            <p id="doomscroll"><a href="page2.html">doomscroll</a></p>
         </div>
 
-        <div id="text9">
-            <p class="center-text" id="page9text"></p>
-        </div>
-    
+        
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
