@@ -87,7 +87,7 @@ button:hover{
 }
 
 .list{
-    background-image: url("/media/white-crumpled-paper-texture-background.jpg");
+    background-image: url("media/white-crumpled-paper-texture-background.jpg");
     background-color: #ffffff;
     padding: 20px;
     font-family: "Delicious Handrawn", cursive;
